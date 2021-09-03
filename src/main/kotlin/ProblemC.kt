@@ -2,10 +2,9 @@ class ProblemC {
 
     fun main() {
 
-        //ваша реализация в методе main
         val n = readInt()
 
-        val list = ArrayList<Int>(readLine()!!.split(' ').map(String::toInt))
+        val list = readIntArray(n)
 
         list.sort()
         var sum = 0
