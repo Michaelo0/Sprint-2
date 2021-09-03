@@ -2,13 +2,11 @@ class ProblemA {
 
     fun main() {
 
-        //ваша реализация в методе main
-
-        var t = readInt();
+        val t = readInt();
         var i = 0
-        var arr = LongArray(t)
+        val arr = LongArray(t)
         while (i < t) {
-            val (a, b, k) = readLine()!!.split(' ').map(String::toInt)
+            val (a, b, k) = readIntArray(3)
             arr[i++] = coordinate(a, b, k)
         }
 
