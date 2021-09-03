@@ -2,11 +2,10 @@ class ProblemB {
 
     fun main() {
 
-        //ваша реализация в методе main
-        var t = readInt();
-        var arr = ArrayList<StringBuilder>()
+        val t = readInt();
+        val arr = ArrayList<StringBuilder>()
         for (i in 1..t){
-            val (n, k) = readLine()!!.split(' ').map(String::toInt)
+            val (n, k) = readIntArray(2)
             var str = StringBuilder()
 
             for (j in 1..n)
